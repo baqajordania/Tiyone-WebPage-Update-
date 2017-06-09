@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/font.css">
+	<title>Tinyone - Stay In Touch</title>
+</head>
+<body>
+<header class="container">
+			<img src="images/logo.png" > 
+			<nav>
+				<ul>		
+					<li><a href="index.html">Features</a></li><!--
+					--><li><a href="#">Blog</a></li><!--
+					--><li><a href="contact.html">Contact</a></li><!--
+					-->
+				</ul>
+			</nav>
+				<div></div>
+		</header>
+<main>
+<div class="main-content">
+	<h1>Tinyone Blog</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus<br /> tristique bibendum. Donec rutrum sed sem quis venenatis.</p>
+	</div>
+
+	<div class="mid-menu-row">
+		<div class="first-column">
+			<ul class="element-one">
+				<li><h3><a href="#">Fully Responsive</a></h3></li>
+				<li><p>Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit. Praesent <br />vitae eros eget tellus tristique <br /> bibendum.</p></li>
+			</ul>
+			<ul class="element-one">
+			<li><h3><a href="#">HTML3 & CSS3</a></h3></li>
+				<li><p>Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit. Praesent <br />vitae eros eget tellus tristique <br /> bibendum.</p></li>
+			</ul>
+			</ul>
+		</div>
+		<div class="second-column"><img src="images/ipad.png"></div>
+		<div class="third-column"><ul class="element-one">
+				<li><h3><a href="#">Font Awesome Icons</a></h3></li>
+				<li><p>Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit. Praesent <br />vitae eros eget tellus tristique <br /> bibendum.</p></li>
+			</ul>
+
+			<ul class="element-one">
+				<li><h3><a href="#">Free to download</a></h3></li>
+				<li><p>Lorem ipsum dolor sit amet,<br /> consectetur adipiscing elit. Praesent <br />vitae eros eget tellus tristique <br /> bibendum.</p></li>
+			</ul>
+			</div>
+
+
+
+	</div>
+
+
+</main>
+<footer>
+	<h1>Keep in touch with us</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique <br />bibendum. Donec rutrum sed sem quis venenatis.</p>
+
+<input type="text" name="mail" placeholder="Enter your email to update">
+<input class="button" type="submit">Send</input>
+<div class="social-ico" >
+		<ul>
+			<li> 
+			   	 <a class="s-i" href="https://www.facebook.com"><img class="s-i-h" src="images/facebook ico.png">  </a>
+			   	 <a class="s-i" href="http://www.twitter.com"><img class="s-i-h" src="images/twitter ico.png">  </a>
+			   	 <a class="s-i" href="https://www.google.com"><img class="s-i-h" src="images/google ico.png">  </a>
+			   	 <a class="s-i" href="https://www.pinterest.com"><img class="s-i-h" src="images/pinterest ico.png">  </a>
+			</li>
+		</ul>
+</div>
+<div class="bottom-menu-row">
+<div class="column one">
+HALOVIETNAM LTD 66, <br /> Dang Van ngu, <br />Dong Da Hanoi, Vietnam<br />
+<a href="#">contact@halovietnam.com</a><br />
++844 35149182</div>
+<div class="column two">
+	<ul>
+	<li><a href="">Examples</a></li>
+	<li><a href="">Shop</a></li>
+	<li><a href="">License	</a></li>
+	</ul>
+</div>
+<div class="column three">
+	<ul>
+	<li><a href="">Contact</a></li>
+	<li><a href="">About</a></li>
+	<li><a href="">Privacy</a></li>
+	<li><a href="">Terms</a></li>
+	</ul>
+</div>
+<div class="column four">
+	<ul>
+	<li><a href="">Download</a></li>
+	<li><a href="">Support</a></li>
+	<li><a href="">Documents</a></li>
+	</ul>
+</div>
+<div class="column five">
+	<ul>
+	<li><a href="">Media</a></li>
+	<li><a href="">Blog</a></li>
+	<li><a href="">Forums</a></li>
+	</ul>
+</div>
+</div>
+<div class="copyright"> <a href="#"> BAQARI JORDANIA  >> 2017 <<</a></div>
+
+</footer>
+
+<script>
+var slideIndex = 1;
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/font.css">
+	<title>Tinyone - Stay In Touch</title>
+</head>
+<body class="bg-black" >
+	<header class="container">
+			<img src="images/logo.png" > 
+			<nav>
+				<ul>		
+					<li><a href="index.html">Features</a></li><!--
+					--><li><a href="blog.html">Blog</a></li><!--
+					--><li><a href="#">Contact</a></li><!--
+					-->
+				</ul>
+			</nav>
+				<div></div>
+		</header>
+
+<div id="map"></div>
+<style>
+	#map {
+	height: 700px;
+	width: 100%;
+}
+</style>
+<script>
+	function initMap() {
+		var location = {lat: 41.717578, lng: 44.785016};
+		var map = new google.maps.Map(document.getElementById("map"), {
+			zoom: 4,
+			center: location 
+		});
+		var marker = new google.maps.Marker({
+			position: location,
+			map: map
+		});
+	}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJJKhn8Xp5QtaQXZ_WjiX0RNTY1fbgGpw&callback=initMap"></script>
+
+<footer class="end">
+
+<div class="copyright"> <a href="#"> BAQARI JORDANIA  >> 2017 <<</a></div>
+
+</footer>
+
+
+</body>
+</html>
